@@ -17,6 +17,7 @@ Start Root Node
 geth --datadir ./chaindata --networkid 0 --port 30304 console 2>> bolt.log
 
 Add Peer Node
+
 In the geth JavaScript console of your root node, type:
 
 > admin.addPeer(
@@ -28,11 +29,13 @@ In the geth JavaScript console of your root node, type:
 > admin.peers
 
 Create an Account
+
 In the geth JavaScript console, create an account:
 
 > personal.newAccount("<YOUR_PASSPHRASE>")
 
 Set Default Account
+
 Check your default account, type
 
 > eth.coinbase
@@ -42,6 +45,7 @@ To set your default account, type
 > miner.setEtherbase(web3.eth.accounts[0])
 
 Start mining
+
 Check your balance with 
 
 > eth.getBalance(eth.coinbase)
